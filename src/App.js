@@ -1,6 +1,10 @@
 import React from 'react'
 import {View, StyleSheet} from 'react-native'
 
+// Para renderizar esse arquivo
+// Mude o AppRegistry em index.js
+// de `=> Menu` para => `App`
+
 //Exemplos 01
 import Simple from './components/Simple'
 import Simple2 from './components/Simple2'
@@ -12,7 +16,7 @@ import Oddeven2 from './components/Oddeven2'
 
 
 //Exemplo 03
-import Invert from './components/Multi'
+import {Invert, Lottery} from './components/Multi'
 
 // Classe principal que retorna a interface grafica
 // Renderiza componentes importados de diversos locais
@@ -27,11 +31,13 @@ export default class App extends React.Component {
         <Oddeven number = {2}></Oddeven>
         <Oddeven2 number = {3}></Oddeven2>
         <Invert text = "Invertido"></Invert>
+        <Lottery numbers={4}></Lottery>
       </View>
     )
   }
 }
 
+//Estilo basicos
 const styles = StyleSheet.create({
   container: {
     flex: 1,

@@ -23,4 +23,5 @@ export const Lottery = props => {
     return <Text style={Base.default}>{my_numbers.join(', ')}</Text>
 }
 
-export default Invert
+export default Invert // Exporta a Invert() como padrao
+// export { Invert, Lottery } => precisa retirar o export das func()
